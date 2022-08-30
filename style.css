@@ -1,0 +1,49 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr 1.5fr 1fr;
+    grid-template-rows: [row1-start] 70% [row1-end] 100% 100% 120%;
+    grid-template-areas: 
+        "sidebar header header header"
+        /* "sidebar contet content content" */
+        "sidebar content content content"
+        "sidebar content content content"
+        "sidebar content content content";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(86, 159, 255);
+    color: whitesmoke;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 10% 30% 20%;
+    row-gap: 6%;
+    padding-left: 20%;
+    }
+
+.title {
+    width: 100%;
+    display: grid;
+    justify-items:start;
+}
+
+.mid {
+    width: 100%;
+    display: grid;
+    justify-items: start;
+}
+
+.bot {
+    width: 100%;
+    display: grid;
+    justify-items: start;
+}
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+    background-color: rgb(230, 229, 238);
+}
