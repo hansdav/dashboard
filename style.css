@@ -28,6 +28,7 @@ body {
 .sidebar > div {
     width: 100%;
     display: grid;
+    align-items: center;
 }
 
 .title {
@@ -35,7 +36,8 @@ body {
     display: grid;
     grid-template-columns: 20% 80%;
     padding-top: 15%;
-    gap: 5%;
+    gap: 10%;
+    font-size: 20px;
 }
 
 .mid {
@@ -44,6 +46,22 @@ body {
 
 .bot {
     grid-template-columns: 100%;
+}
+
+.mid > div {
+    grid-template-columns: 20% 80%;
+    display: grid;
+    align-items: center;
+}
+
+.bot > div {
+    grid-template-columns: 20% 80%;
+    display: grid;
+    align-items: center;
+}
+
+img#lol {
+    height: 3em;
 }
 
 /* header section */
@@ -79,7 +97,7 @@ body {
     display: grid;
     grid-area: champions;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 33% 33% 33%;
     grid-row: 2/6;
     gap: 3% 3%;
     padding-left: 3%;
@@ -95,31 +113,37 @@ body {
 img#shyvana {
     height: 60px;
     width: 60px;
+    border-radius: 100px;
 }
 
 img#senna {
     height: 60px;
     width: 60px;
+    border-radius: 100px;
 }
 
 img#lulu {
     height: 60px;
     width: 60px;
+    border-radius: 100px;
 }
 
 img#missfortune {
     height: 60px;
     width: 60px;
+    border-radius: 100px;
 }
 
 img#blitzcrank {
     height: 60px;
     width: 60px;
+    border-radius: 100px;
 }
 
 img#seraphine {
     height: 60px;
     width: 60px;
+    border-radius: 100px;
 }
 
 /* history section */
