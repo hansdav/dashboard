@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+        .dummytext, p.field-title {
+            font-family: "Poppins";
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
@@ -35,14 +40,21 @@
     <div class="content">
         <div class="champ-title">Most played champions</div>
         <div class="champions">
-            <div class="shyvana">Shyvana</div>
-            <div class="senna">Senna</div>
-            <div class="lulu">Lulu</div>
-            <div class="miss-fortune">Miss Fortune</div>
-            <div class="blitzcrank">Blitzcrank</div>
-            <div class="seraphine">Seraphine</div>
+            <div class="shyvana"><img id="shyvana" src="/icons/shyvana.jpg">
+                <div class="champ-name">Shyvanna</div>
+                <div class="cs">CS 213.6 (6.7)</div>
+                <div class="ratio">2.88KDA</div>
+                <div class="kda">5.6 / 5.0 / 8.8</div>
+                <div class="winrate">62%</div>
+                <div class="played">95 games played</div>
+            </div>
+            <div class="senna"><img id="senna" src="/icons/senna.jpg">Senna</div>
+            <div class="lulu"><img id="lulu" src="/icons/lulu.jpg">Lulu</div>
+            <div class="miss-fortune"><img id="missfortune" src="/icons/missfortune.jpg">Miss Fortune</div>
+            <div class="blitzcrank"><img id="blitzcrank" src="/icons/blitzcrank.jpg">Blitzcrank</div>
+            <div class="seraphine"><img id="seraphine" src="/icons/seraphine.jpg">Seraphine</div>
         </div>
-        <div class="history-title">Recent history</div>
+        <div class="history-title">Recent History</div>
         <div class="recent-history">
             <div class="match-one">WIN</div>
             <div class="match-two">LOSS</div>
@@ -52,7 +64,7 @@
         <div class="profile-stats">
             <div class="snowballs">Snowballs</div>
             <div class="great-shyvana">Great with Shyvana</div>
-            <div class="bad-smite">Bad with Smites</div>
+            <div class="bad-smite">Bad Smites</div>
             <div class="hotstreak">Hotstreak</div>
         </div>
     </div>
