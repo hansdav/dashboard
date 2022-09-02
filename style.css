@@ -4,8 +4,8 @@ body {
 
 .dashboard {
     display: grid;
-    grid-template-columns: 1.2fr 1.5fr 1.5fr 1fr;
-    grid-template-rows: [row1-start] 70% [row1-end] 100% 100% 120%;
+    grid-template-columns: 25vw 30vw 30vw 15vw;
+    grid-template-rows: 20vh 25vh 25vh 30vh;
     grid-template-areas: 
         "sidebar header header header"
         "sidebar content content content"
@@ -25,23 +25,25 @@ body {
     padding-left: 20%;
     }
 
+.sidebar > div {
+    width: 100%;
+    display: grid;
+}
+
 .title {
     width: 100%;
     display: grid;
-    justify-items:start;
+    grid-template-columns: 20% 80%;
     padding-top: 15%;
+    gap: 5%;
 }
 
 .mid {
-    width: 100%;
-    display: grid;
-    justify-items: start;
+    grid-template-columns: 100%;
 }
 
 .bot {
-    width: 100%;
-    display: grid;
-    justify-items: start;
+    grid-template-columns: 100%;
 }
 
 /* header section */
@@ -171,7 +173,8 @@ img#seraphine {
     grid-area: stats-title;
     grid-column: 3 / 4;
     grid-row: 4 / 5;
-    padding-top: 3%;
+    padding-top: 1%;
+    padding-left: 3%;
 }
 
 .profile-stats {
